@@ -4,447 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sultan Bahadur Tech | Digital Solutions</title>
-  <meta name="description" content="Sultan Bahadur Tech provides modern digital solutions and technology services for businesses and organizations.">
+  <title>Sultan Bahadur Tech | Reliable Technology & Digital Solutions</title>
+
+  <meta name="description" content="Sultan Bahadur Tech provides reliable technology, digital solutions, business management systems, websites, apps, POS, online ordering and custom software for modern businesses.">
   <meta name="robots" content="index, follow">
 
-  <!-- Google Tag / Analytics will be added here -->
+  <meta property="og:title" content="Sultan Bahadur Tech | Reliable Technology & Digital Solutions">
+  <meta property="og:description" content="Reliable technology and digital solutions for restaurants, shops, retail stores, malls and modern businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://awan272009-boop.github.io/Sultan-bahadur--tech/">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
-      background: #f5f7fb;
-      color: #111827;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050b18;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
     }
 
     header {
-      background: #0b1220;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
+      background: rgba(5, 11, 24, 0.95);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    nav {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
     }
 
     .logo {
-      font-size: 22px;
-      font-weight: 700;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 1px;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
+    .logo span {
+      color: #3b82f6;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
       font-size: 14px;
     }
 
+    .nav-links a {
+      color: #dbeafe;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #60a5fa;
+    }
+
+    .nav-btn {
+      background: #2563eb;
+      padding: 11px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
     .hero {
-      min-height: 80vh;
-      padding: 100px 7%;
-      background: linear-gradient(135deg, #0b1220, #173b70);
-      color: white;
+      min-height: 650px;
       display: flex;
       align-items: center;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(37,99,235,0.30), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(30,64,175,0.20), transparent 35%);
     }
 
     .hero-content {
-      max-width: 700px;
-    }
-
-    .hero h1 {
-      font-size: 52px;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #dbeafe;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 24px;
-      background: white;
-      color: #0b1220;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-    }
-
-    section {
-      padding: 75px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .section-title h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      color: #64748b;
-    }
-
-    .about {
       max-width: 850px;
-      margin: auto;
-      text-align: center;
-      line-height: 1.8;
-      color: #475569;
+      padding: 80px 0;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 8px 25px rgba(0,0,0,.07);
-      text-align: center;
-    }
-
-    .card .icon {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: #64748b;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .card .btn {
-      background: #0b1220;
-      color: white;
-    }
-
-    .form-container {
-      max-width: 650px;
-      margin: auto;
-      background: white;
-      padding: 35px;
-      border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(0,0,0,.07);
-    }
-
-    .form-group {
-      margin-bottom: 18px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 7px;
-      font-weight: 600;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #d1d5db;
-      border-radius: 7px;
-      font-size: 15px;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .submit-btn {
-      width: 100%;
-      background: #0b1220;
-      color: white;
-      padding: 15px;
-      border: none;
-      border-radius: 8px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .client-list {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .client {
-      background: white;
-      padding: 20px;
-      margin-bottom: 12px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,.05);
-    }
-
-    .contact-box {
-      max-width: 700px;
-      margin: auto;
-      text-align: center;
-      background: white;
-      padding: 40px;
-      border-radius: 15px;
-    }
-
-    footer {
-      background: #0b1220;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 25px;
-    }
-
-    @media (max-width: 800px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      nav {
-        display: none;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="logo">SULTAN BAHADUR TECH</div>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#get-started">Get Started</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Technology That Moves Your Business Forward.</h1>
-
-    <p>
-      Sultan Bahadur Tech provides modern digital solutions and technology
-      services designed to help businesses grow, connect and operate better.
-    </p>
-
-    <a href="#get-started" class="btn">Get Started</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="section-title">
-    <h2>About Sultan Bahadur Tech</h2>
-    <p>Modern technology. Professional solutions.</p>
-  </div>
-
-  <div class="about">
-    <p>
-      Sultan Bahadur Tech is a technology-focused service platform providing
-      digital solutions for businesses and organizations. Our goal is to
-      make technology simple, reliable and accessible.
-    </p>
-  </div>
-</section>
-
-<section id="get-started">
-  <div class="section-title">
-    <h2>Get Started</h2>
-    <p>Choose what you want to do.</p>
-  </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="icon">👤</div>
-      <h3>Client Registration</h3>
-      <p>Register your business or project with Sultan Bahadur Tech.</p>
-      <a href="#registration" class="btn">Register</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">👥</div>
-      <h3>Clients</h3>
-      <p>View registered clients and their submitted information.</p>
-      <a href="#clients" class="btn">View Clients</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">📞</div>
-      <h3>Contact Information</h3>
-      <p>Get in touch with Sultan Bahadur Tech for services and support.</p>
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="registration">
-  <div class="section-title">
-    <h2>Client Registration</h2>
-    <p>Submit your information to get started.</p>
-  </div>
-
-  <div class="form-container">
-
-    <form id="clientForm">
-
-      <div class="form-group">
-        <label>Full Name</label>
-        <input type="text" id="name" required>
-      </div>
-
-      <div class="form-group">
-        <label>Phone Number</label>
-        <input type="tel" id="phone" required>
-      </div>
-
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" id="email" required>
-      </div>
-
-      <div class="form-group">
-        <label>Business / Company</label>
-        <input type="text" id="company">
-      </div>
-
-      <div class="form-group">
-        <label>Service Required</label>
-        <select id="service" required>
-          <option value="">Select a service</option>
-          <option>Website Development</option>
-          <option>Software Development</option>
-          <option>Digital Solutions</option>
-          <option>Business Technology</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Message</label>
-        <textarea id="message"></textarea>
-      </div>
-
-      <button class="submit-btn" type="submit">
-        Register Client
-      </button>
-
-    </form>
-
-  </div>
-</section>
-
-<section id="clients">
-  <div class="section-title">
-    <h2>Our Clients</h2>
-    <p>Registered clients will appear here.</p>
-  </div>
-
-  <div class="client-list" id="clientList">
-    <div class="client">
-      No clients registered yet.
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="section-title">
-    <h2>Contact Information</h2>
-    <p>Let's work together.</p>
-  </div>
-
-  <div class="contact-box">
-    <h3>Sultan Bahadur Tech</h3>
-    <br>
-    <p>Email: awan27.2009@gmail.com.</p>
-    <p>Phone: +923162612450 </p>
-    <br>
-    <a href="#registration" class="btn">Become a Client</a>
-  </div>
-</section>
-
-<footer>
-  © 2026 Sultan Bahadur Tech. All Rights Reserved.
-</footer>
-
-<script>
-  const form = document.getElementById("clientForm");
-  const clientList = document.getElementById("clientList");
-
-  let clients = JSON.parse(localStorage.getItem("sultanBahadurClients")) || [];
-
-  function displayClients() {
-    if (clients.length === 0) {
-      clientList.innerHTML =
-        '<div class="client">No clients registered yet.</div>';
-      return;
-    }
-
-    clientList.innerHTML = clients.map(client => `
-      <div class="client">
-        <strong>${client.name}</strong><br>
-        ${client.company || "No company"}<br>
-        ${client.service}<br>
-        ${client.email}
-      </div>
-    `).join("");
-  }
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const client = {
-      name: document.getElementById("name").value,
-      phone: document.getElementById("phone").value,
-      email: document.getElementById("email").value,
-      company: document.getElementById("company").value,
-      service: document.getElementById("service").value,
-      message: document.getElementById("message").value
-    };
-
-    clients.push(client);
-
-    localStorage.setItem(
-      "sultanBahadurClients",
-      JSON.stringify(clients)
-    );
-
-    displayClients();
-
-    form.reset();
-
-    alert("Client registered successfully!");
-  });
-
-  displayClients();
-</script>
-
-</body>
-        </html>
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid rgba(96,165,250,0.35);
+      background: rgba(37,99,235,0.10);
+      border-radius
