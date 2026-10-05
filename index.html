@@ -2,251 +2,232 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="q4Nct1j-4I2kYNsIWyKIV5MYQXeEgH9PWWTz1PRSSwc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sultan Bahadur Tech | Restaurant POS</title>
-  <meta name="description" content="Sultan Bahadur Tech - Modern Restaurant POS & Management Platform.">
-  
+  <title>Sultan Bahadur Tech | Digital Solutions</title>
+  <meta name="description" content="Sultan Bahadur Tech provides modern digital solutions and technology services for businesses and organizations.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Google Tag / Analytics will be added here -->
+
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      background: #f7faff;
-      color: #0b1736;
-      line-height: 1.6;
+      background: #f5f7fb;
+      color: #111827;
     }
 
     header {
-      background: #ffffff;
+      background: #0b1220;
+      color: white;
       padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e8edf5;
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
     .logo {
-      font-size: 21px;
-      font-weight: 800;
-      color: #0b4fd8;
-      letter-spacing: 0.5px;
+      font-size: 22px;
+      font-weight: 700;
     }
 
     nav a {
+      color: white;
       text-decoration: none;
-      color: #26344f;
-      margin-left: 25px;
-      font-weight: 600;
-    }
-
-    .nav-btn {
-      background: #0b4fd8;
-      color: white !important;
-      padding: 10px 18px;
-      border-radius: 8px;
+      margin-left: 20px;
+      font-size: 14px;
     }
 
     .hero {
-      padding: 100px 7% 90px;
-      text-align: center;
-      background:
-        radial-gradient(circle at top right, #dceaff, transparent 35%),
-        linear-gradient(180deg, #ffffff, #f4f8ff);
+      min-height: 80vh;
+      padding: 100px 7%;
+      background: linear-gradient(135deg, #0b1220, #173b70);
+      color: white;
+      display: flex;
+      align-items: center;
     }
 
-    .badge {
-      display: inline-block;
-      background: #e8f0ff;
-      color: #0b4fd8;
-      padding: 8px 16px;
-      border-radius: 50px;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 22px;
+    .hero-content {
+      max-width: 700px;
     }
 
-    h1 {
-      font-size: clamp(42px, 7vw, 76px);
-      line-height: 1.05;
-      margin-bottom: 22px;
-      letter-spacing: -2px;
-    }
-
-    .hero h1 span {
-      color: #0b4fd8;
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      max-width: 700px;
-      margin: auto;
-      color: #5c6a82;
-      font-size: 19px;
-    }
-
-    .buttons {
-      margin-top: 32px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #dbeafe;
+      margin-bottom: 30px;
     }
 
     .btn {
       display: inline-block;
-      text-decoration: none;
-      padding: 14px 25px;
-      border-radius: 9px;
-      font-weight: 700;
-      transition: 0.2s;
-    }
-
-    .primary {
-      background: #0b4fd8;
-      color: white;
-      box-shadow: 0 8px 25px rgba(11,79,216,0.2);
-    }
-
-    .primary:hover {
-      transform: translateY(-2px);
-      background: #083eac;
-    }
-
-    .secondary {
-      border: 1px solid #cbd6e8;
-      color: #0b1736;
+      padding: 14px 24px;
       background: white;
+      color: #0b1220;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
     }
 
-    .section {
-      padding: 85px 7%;
+    section {
+      padding: 75px 7%;
     }
 
     .section-title {
       text-align: center;
-      max-width: 700px;
-      margin: auto auto 45px;
+      margin-bottom: 40px;
     }
 
     .section-title h2 {
-      font-size: 38px;
-      margin-bottom: 12px;
+      font-size: 34px;
+      margin-bottom: 10px;
     }
 
     .section-title p {
-      color: #69768b;
+      color: #64748b;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      max-width: 1150px;
+    .about {
+      max-width: 850px;
       margin: auto;
+      text-align: center;
+      line-height: 1.8;
+      color: #475569;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
     .card {
       background: white;
-      padding: 30px 25px;
-      border-radius: 15px;
-      border: 1px solid #e3e9f3;
-      box-shadow: 0 8px 30px rgba(18, 48, 90, 0.05);
-    }
-
-    .icon {
-      width: 48px;
-      height: 48px;
-      background: #eaf1ff;
-      color: #0b4fd8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      font-size: 23px;
-      margin-bottom: 18px;
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: #68758a;
-      font-size: 15px;
-    }
-
-    .about {
-      background: #0b1736;
-      color: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.07);
       text-align: center;
     }
 
-    .about p {
-      max-width: 700px;
-      margin: 15px auto;
-      color: #c8d2e5;
-    }
-
-    .founder {
-      margin-top: 30px;
-      font-size: 18px;
-    }
-
-    .cta {
-      text-align: center;
-      background: #edf4ff;
-      padding: 80px 7%;
-    }
-
-    .cta h2 {
-      font-size: 40px;
+    .card .icon {
+      font-size: 38px;
       margin-bottom: 15px;
     }
 
-    .cta p {
-      color: #637089;
-      margin-bottom: 25px;
+    .card h3 {
+      margin-bottom: 12px;
     }
 
-    footer {
-      background: #071027;
-      color: #9eabc1;
-      padding: 30px 7%;
-      text-align: center;
-      font-size: 14px;
+    .card p {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
-    footer strong {
+    .card .btn {
+      background: #0b1220;
       color: white;
     }
 
-    @media (max-width: 700px) {
-      header {
-        padding: 15px 5%;
+    .form-container {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.07);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #d1d5db;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #0b1220;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .client-list {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .client {
+      background: white;
+      padding: 20px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.05);
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #0b1220;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr;
       }
 
-      nav a:not(.nav-btn) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
         display: none;
-      }
-
-      .hero {
-        padding: 75px 5%;
-      }
-
-      .section {
-        padding: 65px 5%;
-      }
-
-      h1 {
-        letter-spacing: -1px;
       }
     }
   </style>
@@ -254,185 +235,216 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">SULTAN BAHADUR TECH</div>
+<header>
+  <div class="logo">SULTAN BAHADUR TECH</div>
 
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a
-        class="nav-btn"
-        href="https://sultan-bhadaur22.base44.app"
-        target="_blank">
-        Open POS
-      </a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#get-started">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="badge">
-      Restaurant POS & Management Platform
-    </div>
-
-    <h1>
-      Run Your Restaurant<br>
-      <span>Smarter.</span>
-    </h1>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Technology That Moves Your Business Forward.</h1>
 
     <p>
-      A modern restaurant management platform designed to simplify
-      POS operations, orders, kitchen management, staff, reports
-      and multi-branch operations.
+      Sultan Bahadur Tech provides modern digital solutions and technology
+      services designed to help businesses grow, connect and operate better.
     </p>
 
-    <div class="buttons">
+    <a href="#get-started" class="btn">Get Started</a>
+  </div>
+</section>
 
-      <a
-        class="btn primary"
-        href="https://sultan-bhadaur22.base44.app"
-        target="_blank">
-        Get Started →
-      </a>
+<section id="about">
+  <div class="section-title">
+    <h2>About Sultan Bahadur Tech</h2>
+    <p>Modern technology. Professional solutions.</p>
+  </div>
 
-      <a
-        class="btn secondary"
-        href="#features">
-        Explore Features
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- FEATURES -->
-  <section class="section" id="features">
-
-    <div class="section-title">
-      <h2>Everything Your Restaurant Needs</h2>
-
-      <p>
-        Powerful tools to help restaurants manage daily operations
-        faster and more efficiently.
-      </p>
-    </div>
-
-
-    <div class="features">
-
-      <div class="card">
-        <div class="icon">🧾</div>
-        <h3>Fast POS</h3>
-        <p>
-          Quickly create orders, manage quantities, apply discounts
-          and process payments.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🍕</div>
-        <h3>Pizza Sizes</h3>
-        <p>
-          Manage Small, Medium and Large pizza sizes with
-          restaurant-specific pricing.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">👨‍🍳</div>
-        <h3>Kitchen Display</h3>
-        <p>
-          Send orders directly to the kitchen and track
-          Preparing, Ready and Completed status.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">📊</div>
-        <h3>Sales Reports</h3>
-        <p>
-          Monitor sales, orders, best-selling items and
-          payment performance.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">👥</div>
-        <h3>Staff Management</h3>
-        <p>
-          Manage restaurant staff and control access
-          according to their roles.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="icon">🏢</div>
-        <h3>Multi-Branch</h3>
-        <p>
-          Manage multiple restaurant branches from one
-          centralized platform.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-
-    <h2>Technology Built for Restaurants</h2>
-
+  <div class="about">
     <p>
-      Sultan Bahadur Tech provides restaurant technology solutions
-      that help businesses digitize their operations and manage
-      their restaurants more efficiently.
+      Sultan Bahadur Tech is a technology-focused service platform providing
+      digital solutions for businesses and organizations. Our goal is to
+      make technology simple, reliable and accessible.
     </p>
+  </div>
+</section>
 
-    <div class="founder">
-      <strong>Okasha Awan</strong><br>
-      Founder & CEO
+<section id="get-started">
+  <div class="section-title">
+    <h2>Get Started</h2>
+    <p>Choose what you want to do.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">👤</div>
+      <h3>Client Registration</h3>
+      <p>Register your business or project with Sultan Bahadur Tech.</p>
+      <a href="#registration" class="btn">Register</a>
     </div>
 
-  </section>
+    <div class="card">
+      <div class="icon">👥</div>
+      <h3>Clients</h3>
+      <p>View registered clients and their submitted information.</p>
+      <a href="#clients" class="btn">View Clients</a>
+    </div>
 
+    <div class="card">
+      <div class="icon">📞</div>
+      <h3>Contact Information</h3>
+      <p>Get in touch with Sultan Bahadur Tech for services and support.</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
 
-  <!-- CTA -->
-  <section class="cta">
+  </div>
+</section>
 
-    <h2>Ready to Run Smarter?</h2>
+<section id="registration">
+  <div class="section-title">
+    <h2>Client Registration</h2>
+    <p>Submit your information to get started.</p>
+  </div>
 
-    <p>
-      Start using the Sultan Bahadur Tech restaurant POS platform.
-    </p>
+  <div class="form-container">
 
-    <a
-      class="btn primary"
-      href="https://sultan-bhadaur22.base44.app"
-      target="_blank">
-      Open POS Platform →
-    </a>
+    <form id="clientForm">
 
-  </section>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+      </div>
 
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" required>
+      </div>
 
-  <!-- FOOTER -->
-  <footer>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+      </div>
 
-    © 2026 <strong>Sultan Bahadur Tech</strong>.
-    Restaurant POS & Management Platform.
+      <div class="form-group">
+        <label>Business / Company</label>
+        <input type="text" id="company">
+      </div>
 
-  </footer>
+      <div class="form-group">
+        <label>Service Required</label>
+        <select id="service" required>
+          <option value="">Select a service</option>
+          <option>Website Development</option>
+          <option>Software Development</option>
+          <option>Digital Solutions</option>
+          <option>Business Technology</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <button class="submit-btn" type="submit">
+        Register Client
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<section id="clients">
+  <div class="section-title">
+    <h2>Our Clients</h2>
+    <p>Registered clients will appear here.</p>
+  </div>
+
+  <div class="client-list" id="clientList">
+    <div class="client">
+      No clients registered yet.
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Information</h2>
+    <p>Let's work together.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Sultan Bahadur Tech</h3>
+    <br>
+    <p>Email: your-email@example.com</p>
+    <p>Phone: +92 XXX XXXXXXX</p>
+    <br>
+    <a href="#registration" class="btn">Become a Client</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sultan Bahadur Tech. All Rights Reserved.
+</footer>
+
+<script>
+  const form = document.getElementById("clientForm");
+  const clientList = document.getElementById("clientList");
+
+  let clients = JSON.parse(localStorage.getItem("sultanBahadurClients")) || [];
+
+  function displayClients() {
+    if (clients.length === 0) {
+      clientList.innerHTML =
+        '<div class="client">No clients registered yet.</div>';
+      return;
+    }
+
+    clientList.innerHTML = clients.map(client => `
+      <div class="client">
+        <strong>${client.name}</strong><br>
+        ${client.company || "No company"}<br>
+        ${client.service}<br>
+        ${client.email}
+      </div>
+    `).join("");
+  }
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const client = {
+      name: document.getElementById("name").value,
+      phone: document.getElementById("phone").value,
+      email: document.getElementById("email").value,
+      company: document.getElementById("company").value,
+      service: document.getElementById("service").value,
+      message: document.getElementById("message").value
+    };
+
+    clients.push(client);
+
+    localStorage.setItem(
+      "sultanBahadurClients",
+      JSON.stringify(clients)
+    );
+
+    displayClients();
+
+    form.reset();
+
+    alert("Client registered successfully!");
+  });
+
+  displayClients();
+</script>
 
 </body>
-  </html>
+        </html>
